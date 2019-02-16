@@ -24,6 +24,7 @@
     border: white solid .066em;
     border-radius: .33em;
     text-align: center;
+    width: 3em;
 }
 
 .logo:hover {
