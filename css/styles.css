@@ -32,11 +32,16 @@ input {
 }
 
 #fill {
-    display: inline-block;
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
 
-#sym {
-    font-family: Cambria;
+#fill h2 {
+    display: inline-block;
+    text-shadow: 0 0 .1em black;
+    font-weight: 700;
+    padding: 1em;
 }
 
 .cryptoName {

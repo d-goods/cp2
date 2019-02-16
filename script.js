@@ -12,9 +12,10 @@ document.getElementById("cryptoSubmit").addEventListener("click", function(event
       }).then(function(json) {
         let results = "";
         results += "<div class=\"cryptoName\">";
-        results += '<h2>Base: ' + json.base_currency + "</h2>";
-        results += '<h2>Min: ' + json.base_min_size + "</h2>";
-        results += '<h2>Max: ' + json.base_max_size + "</h2>";
+        results += '<h2>Base Pair: ' + json.display_name + "</h2>";
+        results += '<h2>Min Transaction: ' + json.base_min_size + json.base_currency + "</h2>";
+        results += '<h2>Max Transaction: ' + json.base_max_size + json.base_currency + "</h2>";
+        results += '<h2>Min to Max Funds per Trade: ' + json.min_market_funds + "-" + json.max_market_funds + "</h2>";
         results += "</div>";
         // results += "<div class=\"cryptoSymbol\">";
         // results += '<h2 id=\"sym\">Symbol: ' + json.symbol + "</h2>";
